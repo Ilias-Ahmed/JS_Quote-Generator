@@ -1,118 +1,119 @@
 @media screen and (max-width: 480px) {
-    nav {
-        padding: 1rem;
-    }
+  nav {
+    padding: 1rem;
+  }
 
-    .mobile-menu {
-        display: block;
-        cursor: pointer;
-        font-size: 1.5rem;
-    }
+  .mobile-menu {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
 
-    .options {
-        display: none;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: white;
-        padding: 1rem;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        z-index: 999;
-    }
+  .options {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 999;
+  }
 
-    .options.show {
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-    }
+  .options.show {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-    aside {
-        display: none;
-        position: fixed;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: white;
-        z-index: 999;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
+  aside {
+    display: none;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 999;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
 
-    aside.show {
-        display: block;
-    }
+  aside.show {
+    display: block;
+  }
 
-    .side-bar-component {
-        padding: 1rem;
-    }
+  .side-bar-component {
+    padding: 1rem;
+  }
 
-    .mobile-nav {
-        display: block;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background: white;
-        box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
-        z-index: 1000;
-    }
+  .mobile-nav {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
 
-    .mobile-nav ul {
-        display: flex;
-        justify-content: space-around;
-        list-style: none;
-        padding: 1rem;
-    }
+  .mobile-nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 1rem;
+  }
 
-    .mobile-nav li {
-        cursor: pointer;
-        padding: 0.5rem 1rem;
-        border-radius: 5px;
-        transition: var(--transition);
-    }
+  .mobile-nav li {
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    transition: var(--transition);
+  }
 
-    .mobile-nav li.active {
-        color: var(--primary-color);
-        background-color: rgba(63, 189, 97, 0.1);
-    }
+  .mobile-nav li.active {
+    color: var(--primary-color);
+    background-color: rgba(63, 189, 97, 0.1);
+  }
 
-    main {
-        margin: 1rem;
-        margin-bottom: 70px;
-    }
+  main {
+    margin: 1rem;
+    margin-bottom: 70px;
+  }
 
-    .page.active {
-        flex-direction: column;
-    }
+  .page.active {
+    flex-direction: column;
+  }
 
-    .quote-container {
-        width: 100%;
-        padding: 1rem;
-    }
+  .quote-container {
+    margin-top: 3rem;
+    width: 100%;
+    padding: 1rem;
+  }
 
-    .button-container {
-        display: flex;
-        flex-direction: column;
-        gap: 0.8rem;
-        width: 100%;
-        padding: 0 1rem;
-    }
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+    padding: 0 1rem;
+  }
 
-    .btn {
-        width: 100%;
-        min-height: 44px;
-        justify-content: center;
-    }
+  .btn {
+    width: 100%;
+    min-height: 44px;
+    justify-content: center;
+  }
 
-    .quote-text {
-        font-size: 1rem;
-    }
+  .quote-text {
+    font-size: 1rem;
+  }
 
-    .saved-quotes-container {
-        padding: 1rem;
-    }
+  .saved-quotes-container {
+    padding: 1rem;
+  }
 
-    .toast {
-        bottom: 80px;
-    }
+  .toast {
+    bottom: 80px;
+  }
 }
