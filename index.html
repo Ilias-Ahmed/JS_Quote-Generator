@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" media="screen and (max-width: 480px)" href="mobile.css">
+  <script src="https://kit.fontawesome.com/4fe7b49ed6.js" crossorigin="anonymous"></script>
+  <title>QuoteHub - Daily Inspiration</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <h1><i class="fa-solid fa-quote-left"></i> QuoteHub</h1>
+      </div>
+      <ul class="options">
+        <li data-page="categories"><i class="fa-solid fa-layer-group"></i> Categories</li>
+        <li data-page="saved"><i class="fa-regular fa-bookmark"></i> Saved</li>
+        <li data-page="profile"><i class="fa-regular fa-user"></i> Profile</li>
+      </ul>
+      <div class="mobile-menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Categories Page -->
+    <div class="page active" id="categories-page">
+      <aside>
+        <ul class="side-bar-component">
+          <li>Categories</li>
+          <li data-category="motivation" class="active">
+            <i class="fa-solid fa-bullseye"></i> Motivation
+          </li>
+          <li data-category="wisdom">
+            <i class="fa-regular fa-lightbulb"></i> Wisdom
+          </li>
+          <li data-category="love">
+            <i class="fa-solid fa-heart-crack"></i> Love
+          </li>
+          <li data-category="success">
+            <i class="fa-regular fa-star"></i> Success
+          </li>
+        </ul>
+      </aside>
+
+      <section class="quote-container">
+        <h4>Random Quote Generator</h4>
+        <div class="quote-box">
+          <div id="quote">
+            <div class="quote-text">
+              <i class="fa-solid fa-quote-left"></i>
+              <p id="quote-content"></p>
+              <i class="fa-solid fa-quote-right"></i>
+            </div>
+            <p class="author"></p>
+          </div>
+        </div>
+        <div class="button-container">
+          <button id="generate" class="btn primary">
+            <i class="fa-solid fa-shuffle"></i> New Quote
+          </button>
+          <button id="save" class="btn secondary">
+            <i class="fa-regular fa-bookmark"></i> Save
+          </button>
+          <button id="share" class="btn secondary">
+            <i class="fa-solid fa-share-nodes"></i> Share
+          </button>
+        </div>
+      </section>
+    </div>
+
+    <!-- Saved Quotes Page -->
+    <div class="page" id="saved-page">
+      <div class="saved-quotes-container">
+        <h2>Saved Quotes</h2>
+        <div id="saved-quotes-list"></div>
+      </div>
+    </div>
+
+    <!-- Profile Page -->
+    <div class="page" id="profile-page">
+      <div class="profile-container">
+        <h2>Profile</h2>
+        <div class="profile-content">
+          <p>Coming Soon...</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="mobile-nav">
+    <ul>
+      <li data-page="categories" class="active">
+        <i class="fa-solid fa-layer-group"></i>
+      </li>
+      <li data-page="saved"><i class="fa-regular fa-bookmark"></i></li>
+      <li data-page="profile"><i class="fa-regular fa-user"></i></li>
+    </ul>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>
